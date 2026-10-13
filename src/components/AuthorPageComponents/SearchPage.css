@@ -1,0 +1,245 @@
+.search-page {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 28px 48px;
+  box-sizing: border-box;
+  color: #172b4d;
+}
+
+.search-page-header {
+  margin-bottom: 28px;
+}
+
+.search-page-eyebrow {
+  color: #2868d7;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.search-page-header h1 {
+  margin: 10px 0;
+  font-size: clamp(28px, 4vw, 38px);
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+.search-page-header p {
+  margin: 0;
+  color: #75839a;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.search-page-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px;
+  border: 1px solid rgba(40, 104, 215, 0.17);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 8px 25px rgba(32, 75, 140, 0.05);
+}
+
+.search-page-icon {
+  margin-left: 10px;
+  flex-shrink: 0;
+  color: #2868d7;
+  font-size: 20px;
+}
+
+.search-page-form input {
+  flex: 1;
+  width: 0;
+  min-width: 0;
+  padding: 12px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #172b4d;
+  font: inherit;
+  font-size: 14px;
+}
+
+.search-page-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #2868d7;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.search-page-form button:hover {
+  background: #1d54b5;
+}
+
+.search-results-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 30px 0 18px;
+}
+
+.search-results-heading h2 {
+  margin: 0;
+  font-size: 19px;
+  overflow-wrap: anywhere;
+}
+
+.search-results-heading span {
+  color: #8793a6;
+  font-size: 12px;
+}
+
+.search-results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.search-result-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  border: 1px solid rgba(40, 104, 215, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 6px 22px rgba(32, 75, 140, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-result-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(32, 75, 140, 0.08);
+}
+
+.search-result-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.search-result-label {
+  color: #2868d7;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.search-result-content h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.search-result-content h3 a {
+  color: #172b4d;
+  text-decoration: none;
+}
+
+.search-result-content h3 a:hover {
+  color: #2868d7;
+}
+
+.search-result-content p {
+  margin: 0;
+  color: #71819a;
+  font-size: 13px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.search-result-meta {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 15px;
+  color: #8793a6;
+  font-size: 11px;
+}
+
+.search-result-open {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #eaf1ff;
+  color: #2868d7;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.search-result-open:hover {
+  background: #dce8ff;
+}
+
+.search-empty,
+.search-message {
+  margin-top: 28px;
+  padding: 42px 24px;
+  border: 1px solid rgba(40, 104, 215, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  color: #71819a;
+}
+
+.search-empty > svg {
+  color: #2868d7;
+  font-size: 30px;
+}
+
+.search-empty h2 {
+  margin: 15px 0 8px;
+  color: #172b4d;
+  font-size: 19px;
+}
+
+.search-empty p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.search-error {
+  color: #bd3434;
+}
+
+@media (max-width: 600px) {
+  .search-page {
+    padding: 22px 16px 32px;
+  }
+
+  .search-page-form {
+    gap: 8px;
+  }
+
+  .search-page-form button {
+    padding: 12px;
+  }
+
+  .search-result-card {
+    padding: 18px;
+    gap: 12px;
+  }
+
+  .search-result-content h3 {
+    font-size: 16px;
+  }
+
+  .search-result-open {
+    width: 36px;
+    height: 36px;
+  }
+}

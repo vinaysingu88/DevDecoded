@@ -1,0 +1,41 @@
+:root {
+  --blue: #2563EB;
+  --navy: #0F1B3D;
+  --sky: #E8F0FF;
+  --ice: #F7FAFF;
+  --cyan: #06B6D4;
+  --violet: #7C3AED;
+  --slate: #475569;
+}
+
+body { background: var(--ice); color: var(--slate); }
+
+.bg-curves {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, var(--ice) 60%, var(--sky) 100%);
+}
+
+.bg-curves svg {
+  position: absolute;
+  width: 140%;
+  left: -20%;
+}
+
+.wave-1 { top: -5%;  animation: drift 18s ease-in-out infinite alternate; }
+.wave-2 { top: 35%;  animation: drift 24s ease-in-out infinite alternate-reverse; }
+.wave-3 { bottom: -5%; animation: drift 30s ease-in-out infinite alternate; }
+
+@keyframes drift {
+  from { transform: translateX(-4%) translateY(0); }
+  to   { transform: translateX(4%)  translateY(18px); }
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--blue), var(--cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

@@ -1,0 +1,162 @@
+
+.why-section {
+  padding: 90px 0;
+  background: transparent;
+}
+
+.why-heading {
+  max-width: 650px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.why-eyebrow,
+.why-cta-label {
+  color: #2868d7;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.why-heading h2 {
+  margin: 14px 0;
+  color: #17243a;
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 800;
+}
+
+.why-heading h2 span {
+  color: #2868d7;
+}
+
+.why-heading > p {
+  margin: 0;
+  color: #68758a;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.why-card {
+  position: relative;
+  height: 100%;
+  padding: 28px 24px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e5ecf8;
+  border-radius: 16px;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  border-color: #c6d9ff;
+  box-shadow: 0 14px 35px rgba(40, 104, 215, 0.09);
+}
+
+.why-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 24px;
+  color: #2868d7;
+  background: #edf3ff;
+  border-radius: 14px;
+  font-size: 22px;
+}
+
+.why-number {
+  position: absolute;
+  top: 25px;
+  right: 22px;
+  color: #e6edfa;
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.why-card h3 {
+  margin-bottom: 12px;
+  color: #17243a;
+  font-size: 19px;
+  font-weight: 750;
+}
+
+.why-card p {
+  margin: 0;
+  color: #6c788b;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.why-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 55px;
+  padding: 34px 40px;
+  color: #fff;
+  background: linear-gradient(120deg, #2868d7, #174da9);
+  border-radius: 20px;
+}
+
+.why-cta-label {
+  color: #d6e5ff;
+}
+
+.why-cta h3 {
+  margin: 10px 0;
+  font-size: clamp(22px, 3vw, 29px);
+  font-weight: 800;
+}
+
+.why-cta p {
+  max-width: 560px;
+  margin: 0;
+  color: #e3edff;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.why-cta-button {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  color: #2868d7;
+  background: #fff;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.why-cta-button:hover {
+  color: #174da9;
+  background: #edf3ff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 767px) {
+  .why-section {
+    padding: 65px 0;
+  }
+
+  .why-heading {
+    margin-bottom: 32px;
+  }
+
+  .why-cta {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 28px 24px;
+  }
+}

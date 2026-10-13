@@ -1,0 +1,277 @@
+
+.hero-section {
+  background: transparent;
+  padding: 90px 0 100px;
+  overflow: hidden;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border: 1px solid #d7e6ff;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #2868d7;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.hero-badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #3478ed;
+  border-radius: 50%;
+}
+
+.hero-title {
+  max-width: 700px;
+  color: #142b4d;
+  font-size: clamp(2.8rem, 5vw, 4.4rem);
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1.12;
+  margin-bottom: 24px;
+}
+
+.hero-title span {
+  display: block;
+  color: #3474df;
+}
+
+.hero-description {
+  color: #63748c;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  max-width: 570px;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #2868d7;
+  color: #ffffff;
+  border: 1px solid #2868d7;
+  border-radius: 10px;
+  padding: 14px 22px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.hero-primary-btn:hover {
+  background: #174fae;
+  border-color: #174fae;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.hero-secondary-btn {
+  background: #ffffff;
+  color: #234875;
+  border: 1px solid #d3e0f3;
+  border-radius: 10px;
+  padding: 14px 22px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.hero-secondary-btn:hover {
+  background: #eaf2ff;
+  border-color: #b9d1fa;
+  color: #174fae;
+}
+
+.hero-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #7a8ca5;
+  font-size: 13px;
+  margin-top: 32px;
+}
+
+.hero-note svg {
+  color: #3474df;
+}
+
+.hero-visual {
+  min-height: 430px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-orb {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #dceaff, #b8d3ff);
+  opacity: 0.8;
+}
+
+.hero-main-card {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 330px);
+  min-height: 290px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #e0eaff;
+  border-radius: 24px;
+  box-shadow: 0 25px 70px rgba(37, 89, 160, 0.13);
+}
+
+.hero-main-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #e8f1ff;
+  color: #2868d7;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.hero-card-label {
+  color: #3474df;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.hero-main-card h3 {
+  color: #183355;
+  font-size: 25px;
+  line-height: 1.4;
+  font-weight: 750;
+  margin: 12px 0;
+}
+
+.hero-main-card p {
+  color: #72839a;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.hero-card-line {
+  width: 65px;
+  height: 5px;
+  background: #3474df;
+  border-radius: 5px;
+  margin-top: 22px;
+}
+
+.hero-mini-card {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid #e2ebf9;
+  border-radius: 15px;
+  padding: 14px;
+  box-shadow: 0 12px 35px rgba(37, 89, 160, 0.12);
+}
+
+.hero-card-top {
+  top: 25px;
+  right: -5px;
+}
+
+.hero-card-bottom {
+  bottom: 25px;
+  left: -15px;
+}
+
+.hero-icon-box {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaf2ff;
+  color: #2868d7;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+.hero-mini-card h6 {
+  margin: 0 0 4px;
+  color: #203b60;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.hero-mini-card p {
+  margin: 0;
+  color: #7a8ca5;
+  font-size: 11px;
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    padding: 65px 0;
+  }
+
+  .hero-visual {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .hero-card-top {
+    right: 0;
+  }
+
+  .hero-card-bottom {
+    left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-title {
+    font-size: 2.65rem;
+    letter-spacing: -1.3px;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-visual {
+    min-height: 380px;
+  }
+
+  .hero-orb {
+    width: 260px;
+    height: 260px;
+  }
+
+  .hero-main-card {
+    padding: 23px;
+    width: 290px;
+  }
+
+  .hero-main-card h3 {
+    font-size: 22px;
+  }
+
+  .hero-mini-card {
+    padding: 10px;
+  }
+}

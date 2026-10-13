@@ -1,0 +1,475 @@
+.admin-posts-page {
+  width: 100%;
+  min-width: 0;
+  color: #172b4d;
+}
+
+.admin-posts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 26px;
+}
+
+.admin-posts-eyebrow {
+  color: #2868d7;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.admin-posts-header h1 {
+  margin: 9px 0 7px;
+  font-size: clamp(24px, 3vw, 31px);
+  letter-spacing: -0.8px;
+}
+
+.admin-posts-header p,
+.admin-posts-panel-header p {
+  margin: 0;
+  color: #7b89a1;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.admin-refresh-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 15px;
+  border: 1px solid #dce6f5;
+  border-radius: 10px;
+  background: #fff;
+  color: #2868d7;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-refresh-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.admin-posts-summary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+  padding: 19px 22px;
+  border: 1px solid #f3e4ce;
+  border-radius: 15px;
+  background: rgba(255, 250, 242, 0.95);
+}
+
+.admin-posts-summary-icon {
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 13px;
+  background: #fff0d9;
+  color: #d98a22;
+  font-size: 19px;
+}
+
+.admin-posts-summary > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.admin-posts-summary > div:nth-child(2) span {
+  color: #8b795f;
+  font-size: 12px;
+}
+
+.admin-posts-summary strong {
+  color: #293b55;
+  font-size: 25px;
+}
+
+.admin-pending-pill {
+  margin-left: auto;
+  padding: 7px 10px;
+  border-radius: 20px;
+  background: #ffedce;
+  color: #9d681b;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.admin-posts-panel {
+  overflow: hidden;
+  border: 1px solid #e4ebf5;
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 5px 22px rgba(35, 65, 110, 0.035);
+}
+
+.admin-posts-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 23px;
+  border-bottom: 1px solid #edf1f7;
+}
+
+.admin-posts-panel-header h2 {
+  margin: 0 0 7px;
+  font-size: 17px;
+}
+
+.admin-post-search {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 220px;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid #e0e8f4;
+  border-radius: 10px;
+  background: #fbfcff;
+  color: #8794aa;
+}
+
+.admin-post-search:focus-within {
+  border-color: #8eb2f4;
+  box-shadow: 0 0 0 3px rgba(40, 104, 215, 0.08);
+}
+
+.admin-post-search input {
+  width: 100%;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #263955;
+  font: inherit;
+  font-size: 12px;
+}
+
+.admin-post-search input::placeholder {
+  color: #9aa6b8;
+}
+
+.admin-post-search button {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #8794aa;
+  cursor: pointer;
+}
+
+.admin-post-notice,
+.admin-post-error {
+  margin: 16px 20px 0;
+  padding: 11px 13px;
+  border-radius: 9px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.admin-post-notice {
+  border: 1px solid #cdebdc;
+  background: #f0fbf5;
+  color: #21815a;
+}
+
+.admin-post-error {
+  border: 1px solid #f4d2d2;
+  background: #fff3f3;
+  color: #bd3030;
+}
+
+.admin-post-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-post-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.admin-post-table th {
+  padding: 14px 19px;
+  background: #f8faff;
+  color: #8794aa;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.admin-post-table td {
+  padding: 17px 19px;
+  border-top: 1px solid #edf1f7;
+  color: #647692;
+  font-size: 12px;
+}
+
+.admin-post-table tbody tr:hover {
+  background: #fbfcff;
+}
+
+.admin-post-title-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  max-width: 240px;
+}
+
+.admin-post-title-cell strong {
+  overflow: hidden;
+  max-width: 100%;
+  color: #263955;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.admin-post-id {
+  color: #2868d7;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.admin-status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 9px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.admin-status-badge.pending {
+  background: #fff2dd;
+  color: #b7781c;
+}
+
+.admin-post-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.admin-post-action {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.admin-post-action:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.admin-post-action.approve {
+  border-color: #ccebd9;
+  background: #effaf4;
+  color: #25885c;
+}
+
+.admin-post-action.approve:hover:not(:disabled) {
+  background: #d9f5e5;
+}
+
+.admin-post-action.reject {
+  border-color: #f2d9c7;
+  background: #fff6ed;
+  color: #bd7731;
+}
+
+.admin-post-action.reject:hover:not(:disabled) {
+  background: #ffead6;
+}
+
+.admin-post-action.delete {
+  border-color: #f2d6d8;
+  background: #fff3f4;
+  color: #c63d45;
+}
+
+.admin-post-action.delete:hover:not(:disabled) {
+  background: #ffe2e4;
+}
+
+.admin-posts-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+  padding: 28px 18px;
+  text-align: center;
+}
+
+.admin-posts-empty-icon {
+  display: grid;
+  place-items: center;
+  width: 57px;
+  height: 57px;
+  margin-bottom: 15px;
+  border-radius: 17px;
+  background: #edf3ff;
+  color: #2868d7;
+  font-size: 23px;
+}
+
+.admin-posts-state h3 {
+  margin: 0 0 8px;
+  color: #263955;
+  font-size: 15px;
+}
+
+.admin-posts-state p {
+  margin: 0;
+  color: #8491a7;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.admin-loader {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 14px;
+  border: 3px solid #dce8ff;
+  border-top-color: #2868d7;
+  border-radius: 50%;
+  animation: admin-post-spin 0.8s linear infinite;
+}
+
+.admin-posts-footer {
+  padding: 14px 20px;
+  border-top: 1px solid #edf1f7;
+  color: #8794aa;
+  font-size: 11px;
+}
+
+.admin-spin {
+  animation: admin-post-spin 0.8s linear infinite;
+}
+
+@keyframes admin-post-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 760px) {
+  .admin-posts-header {
+    align-items: flex-start;
+  }
+
+  .admin-posts-panel-header {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  .admin-post-search {
+    width: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .admin-posts-header {
+    flex-direction: column;
+  }
+
+  .admin-pending-pill {
+    font-size: 9px;
+  }
+
+  .admin-posts-summary {
+    padding: 15px;
+  }
+}
+
+/* Keep the moderation page centered with consistent spacing */
+.admin-posts-page {
+  width: 100%;
+  max-width: 1400px;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 8px 12px 36px;
+  box-sizing: border-box;
+}
+
+/* Give the header breathing room */
+.admin-posts-header {
+  margin-bottom: 30px;
+  padding: 0 4px;
+}
+
+/* Separate the pending summary from the page edges */
+.admin-posts-summary {
+  margin: 0 4px 26px;
+  padding: 22px 26px;
+  box-sizing: border-box;
+}
+
+/* Add breathing room around the submissions panel */
+.admin-posts-panel {
+  margin: 0 4px;
+  border-radius: 18px;
+}
+
+/* Improve panel header spacing */
+.admin-posts-panel-header {
+  padding: 25px 26px;
+  gap: 24px;
+}
+
+/* Make table columns and rows easier to read */
+.admin-post-table th {
+  padding: 17px 22px;
+}
+
+.admin-post-table td {
+  padding: 20px 22px;
+}
+
+/* Keep the page responsive */
+@media (max-width: 760px) {
+  .admin-posts-page {
+    padding: 4px 0 24px;
+  }
+
+  .admin-posts-header {
+    padding: 0 2px;
+  }
+
+  .admin-posts-summary {
+    margin: 0 0 20px;
+    padding: 18px;
+  }
+
+  .admin-posts-panel {
+    margin: 0;
+  }
+
+  .admin-posts-panel-header {
+    padding: 19px;
+  }
+
+  .admin-post-table th,
+  .admin-post-table td {
+    padding: 15px 16px;
+  }
+}
